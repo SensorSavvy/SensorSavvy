@@ -1,0 +1,16 @@
+import os
+from date time import datetime
+
+def recon(ip):
+    # Get current date and time
+    current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+    
+    # Define filename with the current date and time
+    filename = f"nmap_scan_{current_time}.txt"
+    
+    # Run Nmap scan and save output to the file
+    os.system(f"NMAP -A -p -Pn {ip} -v > {filename}")
+
+
+recon(input("What IP would you like to scan?\n"))
