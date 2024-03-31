@@ -1,5 +1,5 @@
+from datetime import datetime
 import os
-from date time import datetime
 
 def recon(ip):
     # Get current date and time
